@@ -1,65 +1,70 @@
 <?php
 /**
  * DATA LAYER
- * Berisi data komoditas produk dalam bentuk multidimensional array.
- * Tidak ada logika perhitungan maupun tampilan di berkas ini.
+ * -----------
+ * File ini bertugas sebagai "sumber data" untuk aplikasi Product Information System.
+ *
+ * Blueprint (Mini Project 1 - Desain):
+ * - Menyimpan data produk dalam bentuk array multidimensional.
+ * - Setiap produk memiliki atribut:
+ *      - ID          : Identitas unik produk
+ *      - Nama        : Nama produk
+ *      - Kategori    : Kategori/jenis produk
+ *      - Harga       : Harga satuan produk
+ *      - Stok        : Jumlah stok tersedia di gudang
+ *      - Deskripsi   : Keterangan singkat produk
+ *
+ * Catatan:
+ * - File ini TIDAK melakukan proses perhitungan atau tampilan (murni data).
  */
 
 $products = [
     [
-        'id'        => 'PRD-001',
-        'nama'      => 'Kopi Gayo Arabica 250g',
-        'kategori'  => 'Minuman',
-        'harga'     => 85000,
+        'id'        => 1,
+        'nama'      => 'Beras Premium 5kg',
+        'kategori'  => 'Sembako',
+        'harga'     => 65000,
         'stok'      => 12,
-        'deskripsi' => 'Biji kopi arabica asal dataran tinggi Gayo, roasting medium.',
+        'deskripsi' => 'Beras putih kualitas premium, kemasan 5kg.',
     ],
     [
-        'id'        => 'PRD-002',
-        'nama'      => 'Teh Hijau Premium 100g',
-        'kategori'  => 'Minuman',
-        'harga'     => 42000,
+        'id'        => 2,
+        'nama'      => 'Minyak Goreng 2L',
+        'kategori'  => 'Sembako',
+        'harga'     => 32000,
         'stok'      => 2,
-        'deskripsi' => 'Daun teh hijau pilihan, cocok untuk seduhan panas maupun dingin.',
+        'deskripsi' => 'Minyak goreng kemasan botol 2 liter.',
     ],
     [
-        'id'        => 'PRD-003',
-        'nama'      => 'Keyboard Mekanik TKL',
-        'kategori'  => 'Elektronik',
-        'harga'     => 550000,
-        'stok'      => 7,
-        'deskripsi' => 'Keyboard 87 tumbol dengan switch biru dan kabel USB-C lepas pasang.',
+        'id'        => 3,
+        'nama'      => 'Gula Pasir 1kg',
+        'kategori'  => 'Sembako',
+        'harga'     => 15000,
+        'stok'      => 20,
+        'deskripsi' => 'Gula pasir putih kemasan 1kg.',
     ],
     [
-        'id'        => 'PRD-004',
-        'nama'      => 'Mouse Wireless 2.4G',
-        'kategori'  => 'Elektronik',
-        'harga'     => 135000,
+        'id'        => 4,
+        'nama'      => 'Telur Ayam 1kg',
+        'kategori'  => 'Bahan Segar',
+        'harga'     => 28000,
         'stok'      => 1,
-        'deskripsi' => 'Mouse nirkabel hemat daya dengan sensor 1600 DPI.',
+        'deskripsi' => 'Telur ayam negeri segar, timbangan 1kg.',
     ],
     [
-        'id'        => 'PRD-005',
-        'nama'      => 'Buku Tulis 58 Lembar',
-        'kategori'  => 'Alat Tulis',
-        'harga'     => 7500,
-        'stok'      => 150,
-        'deskripsi' => 'Buku tulis bergaris dengan sampul karton tebal.',
+        'id'        => 5,
+        'nama'      => 'Kopi Sachet (Renceng)',
+        'kategori'  => 'Minuman',
+        'harga'     => 12000,
+        'stok'      => 30,
+        'deskripsi' => 'Kopi instan sachet, isi 10 per renceng.',
     ],
     [
-        'id'        => 'PRD-006',
-        'nama'      => 'Pulpen Gel 0.5mm',
-        'kategori'  => 'Alat Tulis',
-        'harga'     => 5000,
+        'id'        => 6,
+        'nama'      => 'Mie Instan Goreng',
+        'kategori'  => 'Makanan Instan',
+        'harga'     => 3500,
         'stok'      => 0,
-        'deskripsi' => 'Pulpen gel tinta hitam, tulisan cepat kering.',
-    ],
-    [
-        'id'        => 'PRD-007',
-        'nama'      => 'Tas Ransel Laptop 15"',
-        'kategori'  => 'Fashion',
-        'harga'     => 275000,
-        'stok'      => 9,
-        'deskripsi' => 'Ransel dengan kompartemen laptop berlapis busa dan bahan anti air.',
+        'deskripsi' => 'Mie instan rasa goreng per bungkus.',
     ],
 ];
